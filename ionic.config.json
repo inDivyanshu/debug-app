@@ -1,5 +1,7 @@
 {
   "name": "debug-app",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
