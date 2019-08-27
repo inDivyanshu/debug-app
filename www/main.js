@@ -527,9 +527,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/dist/fesm5.js");
 /* harmony import */ var _ionic_native_splash_screen_ngx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @ionic-native/splash-screen/ngx */ "./node_modules/@ionic-native/splash-screen/ngx/index.js");
 /* harmony import */ var _ionic_native_status_bar_ngx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @ionic-native/status-bar/ngx */ "./node_modules/@ionic-native/status-bar/ngx/index.js");
-/* harmony import */ var _ionic_native_lottie_splash_screen_ngx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @ionic-native/lottie-splash-screen/ngx */ "./node_modules/@ionic-native/lottie-splash-screen/ngx/index.js");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
-
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
 
 
 
@@ -537,12 +535,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 let AppComponent = class AppComponent {
-    constructor(platform, splashScreen, statusBar, router, lottie) {
+    constructor(platform, splashScreen, statusBar, router) {
         this.platform = platform;
         this.splashScreen = splashScreen;
         this.statusBar = statusBar;
         this.router = router;
-        this.lottie = lottie;
         this.flag = false;
         this.initializeApp();
     }
@@ -552,10 +549,6 @@ let AppComponent = class AppComponent {
             //this if-loop is a template for the activities which are done to test wether the user should go to homepage or login screen
             if (!this.flag) {
                 this.router.navigate(['homepage'], { replaceUrl: true });
-                this.lottie.hide();
-            }
-            else {
-                this.lottie.hide();
             }
         });
     }
@@ -569,8 +562,7 @@ AppComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_ionic_angular__WEBPACK_IMPORTED_MODULE_2__["Platform"],
         _ionic_native_splash_screen_ngx__WEBPACK_IMPORTED_MODULE_3__["SplashScreen"],
         _ionic_native_status_bar_ngx__WEBPACK_IMPORTED_MODULE_4__["StatusBar"],
-        _angular_router__WEBPACK_IMPORTED_MODULE_6__["Router"],
-        _ionic_native_lottie_splash_screen_ngx__WEBPACK_IMPORTED_MODULE_5__["LottieSplashScreen"]])
+        _angular_router__WEBPACK_IMPORTED_MODULE_5__["Router"]])
 ], AppComponent);
 
 
@@ -689,7 +681,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/divyanshu/work/debug-app/src/main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! /Users/divyanshu/divyanshu data/debug-app/src/main.ts */"./src/main.ts");
 
 
 /***/ })

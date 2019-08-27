@@ -81,18 +81,28 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HomePage", function() { return HomePage; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _ionic_native_lottie_splash_screen_ngx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @ionic-native/lottie-splash-screen/ngx */ "./node_modules/@ionic-native/lottie-splash-screen/ngx/index.js");
+
 
 
 let HomePage = class HomePage {
-    constructor() { }
+    constructor(lottie) {
+        this.lottie = lottie;
+    }
+    ngOnInit() {
+        let timer = setTimeout(() => {
+            this.lottie.hide();
+            clearTimeout(timer);
+        }, 1200);
+    }
 };
 HomePage = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-        selector: 'app-home',
+        selector: "app-home",
         template: __webpack_require__(/*! ./home.page.html */ "./src/app/home/home.page.html"),
         styles: [__webpack_require__(/*! ./home.page.scss */ "./src/app/home/home.page.scss")]
     }),
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_ionic_native_lottie_splash_screen_ngx__WEBPACK_IMPORTED_MODULE_2__["LottieSplashScreen"]])
 ], HomePage);
 
 

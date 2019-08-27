@@ -1,14 +1,6 @@
 cordova.define('cordova/plugin_list', function(require, exports, module) {
   module.exports = [
     {
-      "id": "cordova-plugin-lottie-splashscreen.LottieSplashScreen",
-      "file": "plugins/cordova-plugin-lottie-splashscreen/dist/www/lottie-splashscreen.js",
-      "pluginId": "cordova-plugin-lottie-splashscreen",
-      "clobbers": [
-        "lottie.splashscreen"
-      ]
-    },
-    {
       "id": "cordova-plugin-statusbar.statusbar",
       "file": "plugins/cordova-plugin-statusbar/www/statusbar.js",
       "pluginId": "cordova-plugin-statusbar",
@@ -55,10 +47,17 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
       "clobbers": [
         "SQLitePlugin"
       ]
+    },
+    {
+      "id": "cordova-plugin-lottie-splashscreen.LottieSplashScreen",
+      "file": "plugins/cordova-plugin-lottie-splashscreen/dist/www/lottie-splashscreen.js",
+      "pluginId": "cordova-plugin-lottie-splashscreen",
+      "clobbers": [
+        "lottie.splashscreen"
+      ]
     }
   ];
   module.exports.metadata = {
-    "cordova-plugin-lottie-splashscreen": "0.7.0",
     "cordova-plugin-whitelist": "1.3.3",
     "cordova-plugin-statusbar": "2.4.2",
     "cordova-plugin-device": "2.0.2",
@@ -66,6 +65,7 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
     "cordova-plugin-ionic-webview": "4.1.1",
     "cordova-plugin-ionic-keyboard": "2.1.3",
     "cordova-sqlite-storage": "3.2.1",
+    "cordova-plugin-lottie-splashscreen": "0.7.0",
     "cordova-plugin-androidx-adapter": "1.1.0",
     "cordova-plugin-androidx": "1.0.2"
   };
