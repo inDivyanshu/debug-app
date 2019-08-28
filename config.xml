@@ -18,14 +18,12 @@
     <preference name="FadeSplashScreenDuration" value="0" />
     <preference name="SplashShowOnlyFirstTime" value="false" />
     <preference name="SplashScreen" value="screen" />
-    <preference name="SplashScreenDelay" value="1000" />
+    <preference name="SplashScreenDelay" value="0" />
     <preference name="LottieAnimationLocation" value="www/lottie/logo.json" />
     <preference name="LottieImagesLocation" value="www/lottie/images" />
     <preference name="LottieLoopAnimation" value="true" />
-    <preference name="LottieWidth" value="0.3" />
-    <preference name="LottieHeight" value="1" />
-    <preference name="LottieRelativeSize" value="true" />
     <preference name="LottieLoopAnimation" value="true" />
+    <preference name="LottieFullScreen" value="true" />
     <preference name="LottieHideTimeout" value="10" />
     <platform name="android">
         <edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application" xmlns:android="http://schemas.android.com/apk/res/android">
